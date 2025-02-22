@@ -19,11 +19,16 @@ html {
 }
   
 body {
-    font-size: 1rem;
-    line-height: 1.5;    
-    margin: 0;
-    width: 100%;
-    background-color: var(--background-color);
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 0;
+	width: 100%;
+	background-color: var(--background-color);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
 }
 
 .wrapper {
@@ -42,6 +47,10 @@ body {
 }
 
 .form-container {
+    width: 100%;
+}
+
+main {
     width: 100%;
 }
 
@@ -67,14 +76,13 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 }
 
 .form-wrap fieldset {
     background-color: var(--secondary-background);
     border-radius: 4px;
     width: 100%;
-    margin: auto;
+    margin: 20px auto;
     padding: 30px 20px;
     border: 1px solid var(--border-color);
 }
