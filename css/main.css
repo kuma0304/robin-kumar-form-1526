@@ -1,0 +1,157 @@
+/* =============== Start: CSS Variables =============== */
+:root {
+    --primary-color: #6495ed; 
+    --background-color: #ffffff; 
+    --border-color: #dddddd;
+    --secondary-background: #f5f5f5;
+    --focus-color: #faffbd;
+}
+/* =============== End: CSS Variables =============== */
+
+/* =============== Start: Default Style =============== */
+* {
+    font-family: "Arial", Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+  
+body {
+    font-size: 1rem;
+    line-height: 1.5;    
+    margin: 0;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.wrapper {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.space-bottom-4 {
+    padding-bottom: 1.5rem;
+}
+
+.pt-2 {
+    padding-top: 1rem;
+}
+
+.form-container {
+    width: 100%;
+}
+
+@media only screen and (min-width: 25rem) {
+    .wrapper {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (min-width: 40rem) {
+    .wrapper {
+        padding: 0;
+    }
+    .form-container {
+        padding: 0 20px;
+    }
+}
+
+/* =============== End: Default Style =============== */
+
+/* =============== Start: Form Style =============== */
+.form-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.form-wrap fieldset {
+    background-color: var(--secondary-background);
+    border-radius: 4px;
+    width: 100%;
+    margin: auto;
+    padding: 30px 20px;
+    border: 1px solid var(--border-color);
+}
+
+.form-wrap form {
+    width: 100%;
+}
+
+.form-ip-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-label {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5px;
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.form-ip {
+    border: 1px solid var(--border-color);
+    min-height: 45px;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+.form-ip:focus {
+    border: 1px solid var(--border-color);
+    background-color: var(--focus-color);
+}
+
+.form-actions {
+	display: flex;
+}
+
+.form-button {
+	padding: 12px 35px;
+	font-size: 1rem;
+	border: none;
+	border-radius: 4px;
+	font-weight: 500;
+    cursor: pointer;
+	color: #fff;
+	background-color: var(--primary-color);
+    width: 100%;
+}
+
+.form-button:hover {
+    opacity: 0.8;
+}
+
+.form-wrap legend {
+	font-size: 2rem;
+	background-color: #fff;
+	padding: 16px 20px;
+    border: 1px solid var(--border-color);
+}
+
+@media only screen and (min-width: 25rem) {
+    .form-input {
+        flex: 1;
+    }
+    .form-ip-wrap {
+        gap: 15px;
+        flex-direction: row;
+    }
+    .form-button {
+        width:  auto;
+    }
+
+}
+
+/* =============== End: Form Style =============== */
